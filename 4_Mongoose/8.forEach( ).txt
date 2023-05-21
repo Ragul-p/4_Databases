@@ -1,0 +1,3 @@
+Array.forEach(function(items){
+console.log(items);
+});

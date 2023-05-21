@@ -1,0 +1,29 @@
+Fruit.updateOne({_id:" "},{name:"Peach"},function(err){
+if(err){
+console.log(err);
+}else{
+console.log("successfully update !");
+}
+});
+
+
+
+// PUT:-
+Fruit.update({title:" "},{title:" ",content:" "},function(err){
+if(err){
+console.log(err);
+}else{
+console.log("successfully update !");
+}
+});
+
+
+
+// PATCH:-
+Fruit.update({title:" "},{$set:{ }},function(err){
+if(err){
+console.log(err);
+}else{
+console.log("successfully update !");
+}
+});

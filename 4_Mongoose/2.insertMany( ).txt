@@ -1,0 +1,27 @@
+const kiwi = new Fruit({
+name:"kiwi",
+score:10,
+review:"The Best Fruit !"
+});
+
+const orange = new Fruit({
+name:"orange",
+score:8,
+review:"The Best Orange !"
+});
+
+const banana = new Fruit({
+name:"banana",
+score:10,
+review:"The Best banana !"
+});
+
+
+
+Fruits.insertMany([kiwi,orange,banana],function(err){
+if(err){
+console.log(err);
+}else{
+console.log("Successfully insert fruitsDB");
+}
+});

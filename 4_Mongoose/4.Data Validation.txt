@@ -1,0 +1,33 @@
+Docs ---> Validation
+
+
+const fruitSchema = new mongoose.schema({
+name:{
+type:String,
+required:[true,"Please Check Your Data Entry !"]            // true or 1
+},
+rating:{
+type:Number,
+min:1,
+max:10
+},
+review:String
+});
+
+
+
+
+const fruit = new Fruit({
+name:"Apple",
+rating:34,
+review:"pretty solid fruit"
+});
+
+fruit.save();
+
+
+
+
+
+1. Error : Validation Error : rating(34) maximum allowed value(10);
+2. Error : remove name and run it 

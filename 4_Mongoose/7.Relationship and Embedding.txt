@@ -1,0 +1,58 @@
+const personSchema = new mongoose.schema({
+name:String,
+age:Number,
+favouriteFruit:fruitSchema
+});
+
+
+
+const pineapple = new Fruit({
+name:"pineappple",
+score:9,
+review:"Great Fruit"
+});
+
+pineapple.save();
+
+
+
+const person = new Person({
+name:"Amy",
+age:12,
+favouriteFruit:pineapple
+});
+
+person.save();
+
+
+
+
+
+// id both Same
+db.people.find(); 
+db.fruits.find();
+
+
+
+//Update
+
+
+const mongo = new Fruit({
+name:"mongo",
+score:6,
+review:"Decent fruit"
+});
+
+mongo.save();
+
+
+Person.UpdateOne({name:"John"},{favouriteFruit:mongo},function(err){
+if(err){
+console.log(err);
+}else{
+console.log("successfully Update !");
+}
+});
+
+
+

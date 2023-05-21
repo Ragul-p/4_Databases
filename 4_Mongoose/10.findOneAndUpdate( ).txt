@@ -1,0 +1,5 @@
+Item.findOneAndUpdate({name:req.body.listName},{$pull:{items:{_id:checkItemId}}},{ new: true },function(err,foundList){
+  if(!err){
+  res.redirect("/"+req.body.listName);
+  }
+});

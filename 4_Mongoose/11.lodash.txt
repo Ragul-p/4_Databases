@@ -1,0 +1,8 @@
+$ npm i lodash
+
+https://lodash.com/docs/4.17.15#capitalize
+
+
+
+const _ = require("lodash");
+        = _.capitalize(req.params.customListName);

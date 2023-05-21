@@ -1,0 +1,20 @@
+Fruit.deleteOne({name:"Peach"},function(err){
+if(err){
+console.log(err);
+}else{
+console.log("successfully deleted !");
+}
+});
+
+
+Fruit.deleteMany({name:"John"},function(err){
+if(err){
+console.log(err);
+}else{
+console.log("successfully deleted all !");
+}
+});
+
+
+
+
