@@ -1,0 +1,7 @@
+Express --> docs guide routing
+
+app.route("/articles").get(|).post(|).delete(|);
+                           |       |         |
+                           |       |         |
+
+                           callback function
