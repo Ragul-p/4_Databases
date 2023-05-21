@@ -1,1 +1,17 @@
 
+Authentication  ---> From  Beginning to End
+
+Why Authentication ?
+    1.create an account
+    2.log in
+    3.Restrict access --> Pay
+
+
+Eg:-
+    Whisper app --> Submit The secret Anonymously
+          
+                 
+                  REGISTER
+     HOME                          SECRET
+                  LOGIN
+ 
