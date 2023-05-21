@@ -1,1 +1,43 @@
 
+https://mongoosejs.com/
+
+Eg: javascript --> JQuery
+    mongodb    --> Mongoose
+
+ > npm i mongoose@6.10.4
+
+
+
+app.js
+
+const mongoose = require("mongoose");
+
+mongoose.connect("mongodb://localhost:27017/fruitsDB",{useNewUrlParser:true});
+
+const fruitSchema = new mongoose.schema({
+name:String,
+rating:Number,
+review:String
+});
+
+
+const Fruit = mongoose.model("Fruit",fruitSchema);
+
+const fruit = new Fruit({
+name: "Apple",
+rating:7,
+review:"pretty solid as a fruit"
+});
+
+fruit.save();
+
+
+
+
+In Terminal:-
+
+>show dbs
+>use fruitsDB
+>show collections
+>db.fruits.find()
+
