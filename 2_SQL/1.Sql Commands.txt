@@ -1,1 +1,83 @@
 
+https://www.w3schools.com/sql/
+Practice SQL:    https://sqliteonline.com/
+
+
+CRUD
+1.Create
+2.Read
+3.Update
+4.Delete
+
+
+
+1. Create Databases:-
+       > create database Store;
+
+2.Create Tables:-
+       > CREATE TABLE products (
+            id INT NOT NULL,
+            name VARCHAR(20),
+            price FLOAT,
+            PRIMARY KEY (id)
+                              );
+
+3.Insert Table Data:-
+       
+      2 Ways:-
+       
+      1. > INSERT INTO products VALUES (1,"pen",0.8);
+      2. > INSERT INTO products (id,name)  VALUES (2,"pencil");
+
+
+      3. // ERROR
+         > INSERT INTO products (name,price) VALUES ("rubber",1.30);
+
+4.READ,SELECT and WHERE :-
+       * --> Everything
+       1.select * from products;
+       2.select name,price from products;
+       3.select * from products where id = 1;
+
+
+5.UPDATE Table:-
+
+      > UPDATE product SET price=2.5 WHERE id=2;
+
+6.ADD COLUMN in Table:-
+      > ALTER TABLE product ADD stock INT;
+
+7.Relationships:-
+
+      >CREATE Table order (
+          id INT NOT NULL,
+          order_number INT,
+          custmer_id INT,
+          product_id INT,
+          PRIMARY KEY (id),
+          FOREIGN KEY (customer_id) REFERENCES customer(id),
+          FOREIGN KEY (product_id) REFERENCES  products(id)
+         );
+
+     >INSERT INTO order VALUES(1,4362,2,1);
+
+
+
+8.INNER JOIN:-
+       >SELECT order.order_number,customers.first_name,customers.last_name,customers.address
+        FROM orders INNER JOIN customers ON order.customer_id=order.id;
+
+
+       >SELECT order.order_number,product.name,product.price 
+        FROM order INNER JOIN products ON order.product_id=product.id;
+
+
+
+
+
+
+
+PRIMARY KEY --> Unique Identify Element
+NOT NULL    --> Not Enter Null Our Database 
+FOREIGN KEY --> Used To Link two table together
+       
