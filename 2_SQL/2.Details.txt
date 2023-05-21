@@ -1,0 +1,13 @@
+1.PRIMARY KEY:-
+      1.Unique identify element
+  
+
+2.NOT NULL:-
+      1.Not Enter Null Our Databases
+
+3.FOREIGN KEY :-
+      1.Is a Key Used to link two tables together
+
+4.INNER JOIN:-
+
+5. * --> Everything
