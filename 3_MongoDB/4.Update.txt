@@ -1,0 +1,2 @@
+>db.updateOne({_id:1},{$set:{stock:32}});
+>db.products.find()

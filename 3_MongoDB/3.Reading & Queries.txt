@@ -1,0 +1,22 @@
+1.
+>show collections
+>db.products.find();
+>db.products.find({name:"pencil"});
+>db.products.find();
+
+
+
+2.
+https://www.mongodb.com/docs/manual/reference/operator/query/
+Query and Projection Operators:-
+
+>db.products.find({price:{$gt:1}});
+
+use find --> id come from default method
+
+>db.products.find({_id:1},{name:1});
+>db.products.find({_id:1},{name:1,_id:0});
+                          1->(show) 0->(not show)
+                         True      False
+
+2nd parameter --> Which fiels od data you want

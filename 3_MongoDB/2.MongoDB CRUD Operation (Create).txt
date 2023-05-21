@@ -1,0 +1,28 @@
+1.MongoDB Docs CRUD Operation:-
+https://www.mongodb.com/docs/manual/crud/
+
+2.
+$ mongod  --> waiting for the connection port 27017
+$ mongo   --> new Terminal
+
+
+
+3.
+>help
+>show dbs    -->list databases
+
+
+4.
+>use shopDB  -->Create DB
+>db          --> show Current DB
+
+
+5.
+>db.products.insertOne({_id:1,name:"Pen",price:1.20});   -->create table & insert
+>show collections --> show tables
+
+
+
+
+
+

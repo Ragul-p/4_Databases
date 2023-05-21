@@ -1,0 +1,9 @@
+>db.products.deleteOne({_id:1});
+
+
+// delete databases:-
+
+
+>use fruitsDB
+
+>
