@@ -1,1 +1,197 @@
 
+Databases:-
+     1.How To persist Data
+     https://www.internetlivestats.com/
+
+
+1.SQL (Structured Query Language):-
+    1.Eg:MySql, Postgre Sql
+    2.Like Excel Spreed Sheet 
+    3.Lot Of Data Not Handle it Error Throw
+
+
+Customers (table):-
+
+FirstName   LastName   Address   Email
+john        doe        32        null
+Angela      yu         12        angela@gmail.com
+jack        Bauer      null      null
+   --> null is very dangerous
+       
+
+2.No Sql (Not Only Structured Query Language):-
+
+    1.Eg:mongoDB, redis
+    2.Represent Json Object -> Key, Value Pair
+
+
+{
+first_name:"john",
+last_name:"doe",
+address:"32"
+}
+
+
+{
+first_name:"Angela",
+last_name:"Yu",
+address:"32",,
+email:"angela@gmail.com"
+}
+
+
+{
+first_name:"jack",
+last_name:"Bauer",
+}
+
+
+
+
+
+
+
+
+
+
+
+
+Different Between Sql  &  No Sql
+
+         SQL                      NoSQL
+1.  Eg : PC                1.   Eg : Mac
+
+2.  old,reliable,          2.   Flashier,newer,modern syntax
+    like structure              modern method
+
+3. Relationship:-
+      Relational           3.  Non-Relational
+
+
+
+
+
+
+
+
+Relationships:-
+
+
+1.SQL:-
+
+customer (table)
+
+FirstName   LastName   Address   ProductBought   Quality  Price             
+Angela      yu         12        Pencil            12      0.80
+Angela      yu         12        Pen               6       1.20
+<------ repeted Data --------->
+
+
+
+
+
+                    Cusomers                                             Products
+CustomerID   FirstName   LastName   Email                      Product ID   Product     Price             
+ 1           Angela      yu         12                          1           Pencil      0.80
+ 2           john        Doe        32                          2           Pen         1.20
+
+
+
+                          Orders
+Order ID   Customer ID   Product     Quality               
+1          2             2            12      
+     
+
+
+2.NoSql:-
+
+
+{
+order_id:order_01,
+customer:{
+first_name:"john",
+last_name:"doe",
+address:"32"
+},
+products:{
+product_name:"Pencil",
+product_price:"0.80",
+},
+order_qantity:12
+}
+
+
+
+
+
+
+
+
+{
+order_id:order_01,
+customer:person_01,
+product:product_01,
+order_quantity:12
+}
+
+{
+person_id:person_01
+first_name:"Angela",
+last_name:"Yu",
+address:"32"
+}
+
+{
+product_id:product_01
+product_name:"Pencil",
+product_price:"0.80"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sclability:-
+
+
+1.SQL:-
+   i.excel Spread sheet
+  ii.slower more data add
+
+2.NoSql:-
+    i.Your database can be distributed lots of computer
+
+
+
+
+
+ 
+
+  MySql                               MongoDB
+
+1.More Mature                      1.Shine And New
+2.Table Structure                  2.Document Structure
+3.Require a Schema                 3.More Flexible To Changes
+4.Great With Relationships         4.Not Great With Relationships
+5.Scales Vertically                5.Scales Horizontally
+
+
+
+
+
+
+
+
+    
+      
