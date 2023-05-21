@@ -1,0 +1,22 @@
+Developer Put AWS key on Github
+Resource : My run in with Unauthorised Litecoin mining on AWS
+
+
+dotenv
+$ npm i dotenv
+
+top of the file app.js
+require("dotenv").config();
+
+$touch .env     --> hidden file
+
+
+snake case
+   SECRET="T=YourSecret."
+
+console.log(process.env.SECRET);
+
+Google:-
+    1.github gitignore Nodejs ignore
+
+

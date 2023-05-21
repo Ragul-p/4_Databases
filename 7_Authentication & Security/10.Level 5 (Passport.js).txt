@@ -1,0 +1,3 @@
+$ npm install passport  passport-local passport-local-mongoose express-session
+
+ 

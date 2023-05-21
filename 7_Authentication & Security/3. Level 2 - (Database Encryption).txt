@@ -1,0 +1,26 @@
+Secret  -----> ertsce
+
+Enigma Machine  --> German Used Secret Message Machine --> Resource Video
+
+Caser Ciper
+
+cryptii.com
+Hello  --->  CaserCiper --->  khoor
+
+Docs --> plugins
+     --> schema
+
+
+Automatic encrypt & decrypt from mongodb:-
+save() --> encrypt
+find() --> decrypt
+
+
+$ npm i mongoose-encryption
+const encrypt = require("mongoose-encryption");
+
+const secret = "YourSecret.";
+
+userSchema.plugin(encrypt,{secret:secret,encryptedFields:["password"]});
+
+

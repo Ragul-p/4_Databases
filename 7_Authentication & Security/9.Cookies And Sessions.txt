@@ -1,0 +1,41 @@
+Amazon  --> Add To basket
+Chrome  --> Setting
+            Search Cookies
+            Content Settings
+            Cookies --> See all cookies and site data --> Remove it
+
+
+
+
+
+Day 1:-
+
+
+cookies      GET     
+           response
+Browser  <--------  Server
+           response
+             POST
+
+
+
+Day 2:-
+
+
+             GET     
+           response
+Browser  <--------  Server
+           response
+          html/css/js
+
+
+
+Session
+     Log In   ---> Start
+     Log Out  ---> End
+     
+     --> Photo on Phone 
+
+
+
+
